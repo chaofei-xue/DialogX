@@ -783,6 +783,15 @@ public class BottomDialog extends BaseDialog implements DialogXBaseBottomDialog 
         public void isFollowNavigationBarHeight(Boolean isFollow) {
             boxRoot.isFollowNavigationBarHeight(isFollow);
         }
+
+        /**
+         * 是否自动调整view底部padding
+         * @param autoAdjust true：自动调整, false：不自动调整
+         * 影响因素：键盘弹出&底部导航栏高度，默认true
+         */
+        public void setAutoAdjust(Boolean autoAdjust) {
+            boxRoot.setAutoAdjust(autoAdjust);
+        }
     }
 
     public void refreshUI() {
